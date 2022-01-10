@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Экспертная система</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="div1" id="div1">
+		<button id="button1">Начать</button>
+	</div>
+
+	<div class="div2 d-none" id="div2">
+		<h3>Вы хотите заниматься один, вдвоём или массово?</h3>
+		<br>
+		<select name="" id="amountPeopleSelect">
+			<option value="Одиночный">Один</option>
+			<option value="Вдвоем">Вдвоём</option>
+			<option value="Массовый">Массово</option>
+		</select>
+		<br>
+		<button id="button2">Ответить</button>
+	</div>
+
+	<div class="div3 d-none" id="div3">
+		<h3>Насколько долго вы хотели бы/смогли бы заниматься спортом за 1 сессию?</h3>
+		<br>
+		<select name="" id="durationSelect">
+			<option value="Быстрый">Быстро</option>
+			<option value="Средний">Средне</option>
+			<option value="Долгий">Долго</option>
+		</select>
+		<br>
+		<button id="button3">Ответить</button>
+	</div>
+
+	<div class="div4 d-none" id="div4">
+		<h3>Вы хотели бы заниматься интенсивно или в спокойном темпе?</h3>
+		<br>
+		<select name="" id="intensitySelect">
+			<option value="Интенсивный">Интенсивно</option>
+			<option value="Спокойный">Спокойно</option>
+		</select>
+		<br>
+		<button id="button4">Ответить</button>
+	</div>
+
+	<div class="div5 d-none" id="div5">
+		<h3>У вас есть желание скинуть вес, набрать или оставить свой?</h3>
+		<br>
+		<select name="" id="changeWeightSelect">
+			<option value="Оставить вес">Оставить вес</option>
+			<option value="Скинуть вес">Скинуть вес</option>
+			<option value="Набрать вес">Набрать вес</option>
+		</select>
+		<br>
+		<button id="button5">Ответить</button>
+	</div>
+
+	<div class="div6 d-none" id="div6">
+		Вам лучше всего подходят данные виды спорта:
+		<br><br>
+		<b><span id="result"></span></b>
+		<br><br>
+		<p>Характеристики данных видов спорта:</p>
+		<span id="resultSportCharacters"></span>
+		<br><br>
+		<button onclick="window.location.reload();" class="reloadBtn">Начать заново</button>
+	</div>
+
+	<div class="div7 d-none" id="div7">
+		<p>Возможно, вам подошел бы данный вид спорта:</p>
+		<br>
+		<span id="preResult"></span>
+	</div>
+
+	<script src="data.js"></script>
+	<script src="script.js"></script>
+</body>
+</html>
